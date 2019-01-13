@@ -1,0 +1,155 @@
+<!Doctype <!DOCTYPE html>
+<html style="overflow:hidden;" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lloyd Dapaah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/main.css" />
+    <link rel="icon" href="./resources/images/favicon.png" />
+</head>
+<body style="overflow:hidden;" >
+    <!-- video player -->
+    <video autoplay loop muted class="main-background">
+        <source src="./resources/videos/beautiful-cold-dawn.mp4" type="video/mp4">
+        <source src="./resources/videos/beautiful-cold-dawn.webm" type="video/webm">
+        <source src="./resources/videos/beautiful-cold-dawn.ogv" type="video/ogg">
+    </video>
+
+    <!-- dark cover -->
+    <div class="dark-cover"></div>
+    
+    <div class="main-container">
+        <div class="top-layer-container">
+            <!-- resume -->
+            <div id="resume" class="top-menu-button" >
+                <h2 class="top-menu-text" onclick="respondToMenu(resume, resumeWindow)">Resume</h2>
+            </div>
+            <div id="resumeWindow" class="detail-window">
+                <div class="middle-layer-window">
+                    <div style="height:100%;width:100%;overflow-y:scroll">
+                        <img width="100%" src="./resources/images/resume.png" alt="resume.pdf">
+                    </div>
+                </div>
+            </div>
+
+            <!-- project -->
+            <div id="project" class="top-menu-button">
+                <h2 class="top-menu-text" onclick="respondToMenu(project, projectWindow)">Projects</h2>
+            </div>
+            <div id="projectWindow" class="detail-window">
+                <div class="middle-layer-window">
+                    <div class="scroll-horizontal-layer">
+                        <div class="project-object">
+                            <h2 class="project-title">FEAST</h2>
+                            <h3 class="project-desc">
+                                A self-learning iOS application built to recommend local restaurants based on user preference or mood.
+                            </h3>
+                            <p class="state-tag">in-progress...</p>
+                            <div>
+                                <a href="https://github.com/lloydoad/Feast/" target="_blank">GITHUB</a>
+                            </div>
+                        </div>
+                        <div class="project-object">
+                            <h2 class="project-title">ZENBOARD</h2>
+                            <h3 class="project-desc">
+                                A React web application demonstrating encapsulation and translation of data changes into CSS animations.
+                            </h3> 
+                            <p class="state-tag">open-to-forks</p>
+                            <div>
+                                <a href="https://github.com/lloydoad/zen-board" target="_blank">GITHUB</a>
+                            </div>
+                        </div>
+                        <div class="project-object">
+                            <h2 class="project-title">DESIGN TEMPLATES</h2>
+                            <h3 class="project-desc">
+                                A collection of self built websites templates using basic web technologies. Easy to use and open to customizations.
+                            </h3>
+                            <p class="state-tag">join-the-team</p>
+                            <div>
+                                <a href="https://github.com/lloydoad-web-templates" target="_blank">ORGANIZATION</a>
+                            </div>
+                        </div>
+                        <div class="project-object">
+                            <h2 class="project-title">TELL</h2>
+                            <h3 class="project-desc">
+                                An iOS chat application capable of automatically translating text messages to user preferred languages.
+                            </h3>
+                            <div>
+                                <a href="https://github.com/lloydoad/Tell" target="_blank">GITHUB</a>
+                            </div>
+                        </div>
+                        <div class="project-object">
+                            <h2 class="project-title">MEOWER</h2>
+                            <h3 class="project-desc">
+                                Twitter... but for cats: a simple full stack web application template for front-end and back-end connections.
+                            </h3>
+                            <p class="state-tag">invite-your-cat</p>
+                            <div>
+                                <a href="https://meowe.herokuapp.com" target="_blank">WEBSITE</a>
+                            </div>
+                        </div>
+                        <div class="project-object">
+                            <h2 class="project-title">SPACE INVADERS</h2>
+                            <h3 class="project-desc">
+                                A JavaFX and Swing recreation of the 1978 classic, space invaders. Complete with File I/O for saved game data.
+                            </h3>
+                            <p class="state-tag">try-it</p>
+                            <div>
+                                <a href="https://github.com/lloydoad/Space-Invaders" target="_blank">GITHUB</a>
+                            </div>
+                        </div>
+                        <div style="min-width:5%;height: 100px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contact -->
+            <div id="contact" class="top-menu-button" >
+                <h2 class="top-menu-text" onclick="respondToMenu(contact, contactWindow)">Contact</h2>
+            </div>
+            <div id="contactWindow" class="detail-window">
+                <div class="middle-layer-window" style="align-items:center">
+                    <div class="contact-section" style="display:block; margin: auto">
+                        <form style="width:100%; padding: 3%; padding-top: 1.4%" action="https://jumprock.co/mail/lloydemail" method="post">
+                            <div class="row">
+                                <div class="six columns">
+                                    <label style="color:aliceblue;font-weight: 300" for="exampleEmailInput">Your email</label>
+                                    <input class="u-full-width" type="email" name="email" placeholder="yeet@yeeted.com" id="exampleEmailInput" required>
+                                </div>
+                                <div class="six columns">
+                                    <label style="color:aliceblue;font-weight: 300" for="exampleRecipientInput">Reason for contacting</label>
+                                    <select class="u-full-width" id="exampleRecipientInput">
+                                        <option value="Option 1">Questions</option>
+                                        <option value="Option 2">Suggestions</option>
+                                        <option value="Option 3">Opportunities</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <label style="color:aliceblue;font-weight: 300" for="exampleMessage">Message</label>
+                            <textarea class="u-full-width" style="resize: none;" placeholder="Hi Lloyd …" id="exampleMessage" type="text" name="message"></textarea>
+                            <input style="color:aliceblue;font-weight: 300" type="submit" value="Send" required>
+                            <input type="hidden" name="after" value="http://localhost:5500">
+                            <input type="text" name="trapit" value="" style="display:none">
+                        </form>
+                    </div>
+                    <div class="connect-section">
+                        <img class="connect-object" src="./resources/images/instagram_white.png" 
+                        alt="instagram.png" onclick="window.open('https://www.instagram.com/lloydoad/')">
+                        <img class="connect-object" src="./resources/images/white_github.png" 
+                        alt="github.png" onclick="window.open('https://github.com/lloydoad')">
+                        <img class="connect-object" src="./resources/images/linkedin_white.png" 
+                        alt="linkedin.png" onclick="window.open('https://www.linkedin.com/in/lloyddapaah')">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="./script/main.js"></script>
+</body>
+</html>

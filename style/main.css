@@ -1,0 +1,368 @@
+body {
+    background: rgb(148,117,183);
+    background: linear-gradient(39deg, rgba(148,117,183,1) 0%, rgba(131,117,181,1) 35%, rgba(104,113,181,1) 100%);
+    margin: 0px;
+}
+
+h2,h3,h5,p,a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(226, 208, 247);
+}
+
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #8c6ea5; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(157, 184, 226); 
+}
+
+.main-background {
+    position: absolute;
+    background: rgb(148,117,183);
+    background: linear-gradient(39deg, rgba(148,117,183,1) 0%, rgba(131,117,181,1) 35%, rgba(104,113,181,1) 100%);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.dark-cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.2) 37%, rgba(253,253,255,0.1) 100%);
+}
+
+.main-container {
+    position:absolute;
+    height: 100%; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: display 0.5s;
+}
+
+.top-layer-container {
+    position: relative;
+    padding: 0px;
+    width: 100%;
+}
+
+.top-menu-button {
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    padding: 11px 0px;
+    margin: 0px;
+    -webkit-transition: padding 0.3s; /* Safari */
+    transition: padding 0.3s;
+}
+
+.top-menu-button-opened {
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+    height: 9%;
+    width: 100%;
+}
+
+.top-menu-text {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 2.3em;
+    letter-spacing: 2.2px;
+    margin:0px;
+    padding:0px;
+}
+
+.close-button {
+    height: 40%;
+    margin-right: 20px;
+    object-fit: contain;
+}
+
+.button-show {
+    display: "";
+}
+
+.hide {
+    display: none;
+}
+
+.top-menu-button:hover {
+    padding: 32px 0px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.detail-window {
+    height: 0%;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    overflow: hidden;
+}
+
+.middle-layer-window {
+    height: 100%;
+    width: 100%;
+}
+
+.scroll-horizontal-layer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+    margin: 0px;
+    padding: 0px;
+}
+
+.project-object {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(227, 222, 236, 0.123);
+    border: solid 2px rgba(150, 142, 165, 0.274);
+    border-radius: 1.1%;
+    margin: 0px;
+    margin-left: 5%;
+    min-width: 40%;
+    min-height: 60%;
+}
+
+.project-title {
+    font-size: 2.1em;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.project-desc {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin: 5px auto;
+    letter-spacing: 0.4px;
+}
+
+.state-tag {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 14px;
+    color: rgb(226, 208, 247);
+    font-weight: 400;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.contact-section {
+    height: 90%;
+    width: 80%;
+}
+
+.connect-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+.connect-object {
+    cursor: pointer;
+    margin: 0px 10px; 
+    height: 83%;
+    object-fit: contain;
+}
+
+@-webkit-keyframes bringOut {
+    from {height: 0%;}
+    to {height: 69%;}
+}
+
+@keyframes bringOut {
+    from {height: 0%;}
+    to {height: 69%;}
+}
+
+@-webkit-keyframes bringOutShort {
+    from {height: 0%;}
+    to {height: 50%;}
+}
+
+@keyframes bringOutShort {
+    from {height: 0%;}
+    to {height: 50%;}
+}
+
+@-webkit-keyframes foldIn {
+    from {height: 69%;}
+    to {height: 0%;}
+}
+
+@keyframes foldIn {
+    from {height: 69%;}
+    to {height: 0%;}
+}
+
+@-webkit-keyframes fadeInKey {
+    from {opacity: 0.0;}
+    to {opacity: 1.0;}
+}
+
+@keyframes fadeInKey {
+    from {opacity: 0.0;}
+    to {opacity: 1.0;}
+}
+
+@-webkit-keyframes fadeOutKey {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+}
+
+@keyframes fadeOutKey {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+}
+
+.detail-window-open {
+    animation-name: bringOut;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    -webkit-animation-name: bringOut;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+}
+
+.detail-window-open.short {
+    animation-name: bringOutShort;
+    animation-duration: 0.5s;
+    -webkit-animation-name: bringOutShort;
+    -webkit-animation-duration: 0.5s;
+}
+
+.detail-window-close {
+    animation-name: foldIn;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    -webkit-animation-name: foldIn;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: both;
+}
+
+.layer-fade-in {
+    animation-name: fadeInKey;
+    animation-duration: 0.4s;
+    animation-delay: 0.4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInKey;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+}
+
+.layer-fade-out {
+    animation-name: fadeOutKey;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeOutKey;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+}
+
+@media (max-width: 460px) and (max-height: 824px), (max-width: 825px) and (max-height: 824px) {
+    .project-title {
+        margin: 3px auto;
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+
+    .project-desc {
+        margin: 2px auto;
+        font-size: 0.7em;
+        margin-bottom: 3.5px;
+        letter-spacing: 0.3px;
+    }
+
+    .state-tag {
+        font-size: 0.5em;
+        margin-bottom: 3px;
+    }
+
+    a {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-height:460px) and (orientation:landscape){
+    ::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .top-menu-button {
+        padding: 7px 0px;
+    }
+
+    .top-menu-text {
+        font-size: 1.4em;
+    }
+
+    .top-menu-button:hover {
+        padding: 15px 0px;
+    }
+
+    .project-object {
+        height: 80%;
+    }
+
+    .contact-section {
+        width: 90%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-height:825) and (orientation:portrait){
+    .top-menu-button {
+        padding: 10px 0px;
+    }
+
+    .top-menu-text {
+        font-size: 2em;
+    }
+
+    .top-menu-button:hover {
+        padding: 24px 0px;
+    }
+}
