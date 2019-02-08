@@ -1,5 +1,4 @@
 body {
-    background: rgb(148,117,183);
     background: linear-gradient(39deg, rgba(148,117,183,1) 0%, rgba(131,117,181,1) 35%, rgba(104,113,181,1) 100%);
     margin: 0px;
 }
@@ -34,10 +33,21 @@ a:hover {
     background: rgb(157, 184, 226); 
 }
 
+.preloader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.preloader-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .main-background {
     position: absolute;
-    background: rgb(148,117,183);
-    background: linear-gradient(39deg, rgba(148,117,183,1) 0%, rgba(131,117,181,1) 35%, rgba(104,113,181,1) 100%);
     height: 100%;
     width: 100%;
     object-fit: cover;
