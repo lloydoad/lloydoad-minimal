@@ -4,5 +4,8 @@
   "alias": [
     "dapaah.me",
     "www.dapaah.me"
-  ]
+  ],
+  "github": {
+    "autoAlias": true
+  }
 }
